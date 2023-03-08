@@ -1,3 +1,3 @@
 @ECHO OFF
-python TaihoCrawl.py
+python crawl_fetch_links.py
 pause

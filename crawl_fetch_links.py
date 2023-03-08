@@ -60,12 +60,12 @@ def crawler(input_url , depth):
 					final_parsed_href.netloc)
 				if is_valid:
 					if current_url_domain not in href and href not in links_external:
-						#print("External Taiho links:{}".format(href))
+						#print("External links:{}".format(href))
 						links_external.add(href)
 						if href not in dumplist and 'http' in href:
 							dumplist.append(href)
 					if current_url_domain in href and href not in links_internal:
-						#print("Internal Taiho links:{}".format(href))
+						#print("Internal links:{}".format(href))
 						links_internal.add(href)
 						temp_urls.add(href)
 						if href not in dumplist and 'http' in href:
